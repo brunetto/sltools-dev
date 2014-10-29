@@ -19,7 +19,7 @@ import (
 	"github.com/brunetto/goutils/sets"
 )
 
-// AllData contains the maps ofall the stars and the binaries.
+// AllData contains the maps of all the stars and the binaries.
 // The keys are the name of the star/binary, the values the struct containing
 // the data
 type AllDataType struct {
