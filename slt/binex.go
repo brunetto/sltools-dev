@@ -10,6 +10,7 @@ func Binex () () {
 	
 	
 	for _, inFileName = range inFileNames {
+		// Find, from name, combinations, metallicity, TF, Rv, NCM, fPB, W, Z
 		
 		// Init data
 		
