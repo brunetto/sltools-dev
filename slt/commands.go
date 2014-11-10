@@ -205,6 +205,7 @@ var CreateStartScriptsCmd = &cobra.Command{
 	},
 }
 
+var force bool = false
 // Out2ICsCmd + CreateStartScriptsCmd
 var ContinueCmd = &cobra.Command{
 	Use:   "continue",
@@ -556,6 +557,7 @@ func InitCommands() {
 
 	SlToolsCmd.AddCommand(Out2ICsCmd)
 	Out2ICsCmd.Flags().StringVarP(&inFileName, "stdOut", "o", "", "Last STDOUT to be used as input")
+	Out2ICsCmd.Flags().StringVarP(&force, "force", "f", "", "Disable end-of-simulaiton check")
 
 	SlToolsCmd.AddCommand(CreateStartScriptsCmd)
 	CreateStartScriptsCmd.Flags().StringVarP(&icsName, "icsName", "i", "", "ICs file name")
