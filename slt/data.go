@@ -1,4 +1,4 @@
-package slan
+package slt
 
 import (
 	"bufio"

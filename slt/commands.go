@@ -561,7 +561,7 @@ func InitCommands() {
 	SlToolsCmd.AddCommand(Out2ICsCmd)
 	Out2ICsCmd.Flags().StringVarP(&inFileName, "stdOut", "o", "", "Last STDOUT to be used as input")
 	Out2ICsCmd.Flags().BoolVarP(&force, "force", "f", false, "Disable end-of-simulaiton check")
-	
+
 	SlToolsCmd.AddCommand(CreateStartScriptsCmd)
 	CreateStartScriptsCmd.Flags().StringVarP(&icsName, "icsName", "i", "", "ICs file name")
 	CreateStartScriptsCmd.Flags().StringVarP(&simTime, "simTime", "t", "500", "Remaining simulation time provided by the out2ics command")
